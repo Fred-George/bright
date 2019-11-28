@@ -1,3 +1,7 @@
+#wrapper{
+    background-color: $black;
+}
+
 #content{
     padding: 10px;
     &.page-content{
@@ -18,9 +22,10 @@ h1{
         margin-top: 11vh;
         text-align: center;
         height: 38vh;
-        background-image: url('../logo.svg');
+        background-image: url('../logo_big.png');
         background-repeat: no-repeat;
         background-position: top center;
+        background-size : contain;
     }
 }
 .transition{
