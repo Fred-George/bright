@@ -57,13 +57,13 @@ h1{
     color: $white;
     font-family: $header-font-family;
     font-size: 1.1em;
-
+    text-align: center;
     .place, .date{
         display: inline-block;
-        background: rgba($black, .7);
+        color: $secondary-color;
+        background: rgba($black, .5);
         padding: 3px 15px 3px 15px;
         margin: 5px;
-        transform: rotate(-5deg);
     }
 }
 .section-header{
