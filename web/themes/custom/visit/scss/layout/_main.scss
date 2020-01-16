@@ -102,6 +102,33 @@ h1{
     }
 }
 
+/** Map view **/
+
+.gm-style-iw{
+    .map-element-title{
+        font-size: 1.3em;
+        margin-bottom: 0;
+    }
+    .map-element-artist{
+        font-family: $header-font-family;
+        font-style: oblique;
+        font-size: 1em;
+        color: $black;
+        margin-bottom: 0;
+    }
+    .map-element-lieu{
+        font-size: 1em;
+        color: $black;
+        margin-bottom: 0;
+    }
+    .map-element-image{
+        width: 200px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
 /** Installations view **/
 
 .installation-teaser{
