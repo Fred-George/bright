@@ -16,3 +16,11 @@
     </div>
   </div>
 </article>
+{% if page %}
+<script>
+  fbq('track', 'ViewContent', { 
+  content_name: '{{ node.title.0.value }}',
+  content_category: '{{ node.type.0.target_id }}'
+  });
+</script>
+{% endif %}

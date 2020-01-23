@@ -127,6 +127,12 @@ h1{
             width: 100%;
         }
     }
+    .info_point_title{
+        font-size: 1.3em;
+        font-family: $header-font-family;
+        margin-bottom: 0;
+        color: $black;
+    }
 }
 
 /** Installations view **/
