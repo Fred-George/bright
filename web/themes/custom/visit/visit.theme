@@ -28,6 +28,7 @@ function visit_preprocess_html(&$variables) {
  * Add template suggestions and classes
  */
 function visit_preprocess_node(&$variables) {
+    $variables['base_path'] = $GLOBALS['base_url'];
 }
 
 /**

@@ -23,6 +23,20 @@ footer{
             margin: 10px;
         }
     }
+    .block-partenairehotel{
+        .button{
+            background-color: $white;
+            color: $secondary-color;
+            margin-top: 10px;
+            &:hover{
+                color: $white;
+                background-color: $primary-color;
+            }
+        }
+        .embedded-entity{
+            margin : 0 0 20px 0;
+        }
+    }
 }
 .eu-cookie-compliance-banner{
     padding: 20px 0 0 0;
