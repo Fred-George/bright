@@ -10,7 +10,9 @@ iframe {
         position: relative;
     }
 }
-
+#main-menu{
+    z-index: 200;
+}
 .social-icons {
     margin: 0;
     padding: 0;
@@ -114,6 +116,7 @@ iframe {
     box-shadow: 1px 0px 1px rgba($black, 0.3);
     border-bottom: 3px solid $secondary-color;
     position: absolute;
+    z-index: 450;
     .title-bar{
         background-color: $secondary-color;
         .menu-icon::after{
