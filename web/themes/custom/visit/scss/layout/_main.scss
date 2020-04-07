@@ -10,7 +10,7 @@
     }
 }
 h1{
-    margin-bottom: .8em;
+    margin-bottom: .5em;
 }
 .home-first{
     height: 100vh;
@@ -101,7 +101,99 @@ h1{
         background: $white;
     }
 }
-/* Presales */
+
+/** Map view **/
+
+.gm-style-iw{
+    .map-element-title{
+        font-size: 1.3em;
+        margin-bottom: 0;
+    }
+    .map-element-artist{
+        font-family: $header-font-family;
+        font-style: oblique;
+        font-size: 1em;
+        color: $black;
+        margin-bottom: 0;
+    }
+    .map-element-lieu{
+        font-size: 1em;
+        color: $black;
+        margin-bottom: 0;
+    }
+    .map-element-image{
+        width: 200px;
+        img{
+            width: 100%;
+        }
+    }
+    .info_point_title{
+        font-size: 1.3em;
+        font-family: $header-font-family;
+        margin-bottom: 0;
+        color: $black;
+    }
+}
+
+/** Installations view **/
+
+.installation-teaser{
+    z-index: 10;
+    position: relative;
+    margin-bottom: 30px;
+    a{
+        display: block;
+        h2, h3{
+            position : absolute;
+            top : 0;
+            left : 0;
+            font-size: 1.6em;
+            color: $white;
+            text-align: center;
+            margin-top : 10px;
+            width : 100%;
+        }
+        .field-place{
+            position: absolute;
+            line-height: 1em;
+            bottom: 5px;
+            left: 20px;
+            display: inline-block;
+            color: $white;
+            background-color: $secondary-color;
+            padding: 2px 5px 1px 5px;
+            font-family: $header-font-family;
+            text-align: center;
+        }
+        &:hover, &:focus{
+            opacity: 0.8;
+        }
+        .field_media_image{
+            margin-top : 80px;
+        }
+    }
+}
+
+
+//** Single installation **//
+
+.node--type-installation{
+    .body{
+        margin-top : 20px;
+    }
+    .field_lieu, .field_artiste{
+        margin-bottom : 10px;
+        font-size : 1.2em;
+        font-family: $header-font-family;
+    }
+    .field_artiste{
+        font-style: oblique;
+    }
+    .picto-pmr{
+        width: 50px;
+        margin-top: 15px;
+    }
+}
 
 .primary{
     color: $primary-color;
@@ -119,7 +211,7 @@ h1{
 @include breakpoint(medium up){
     #content{
         &.page-content{
-            padding-top: 100px;
+            padding-top: 50px;
         }
     }
     #home-zone{

@@ -1,0 +1,29 @@
+<article id="node-{{ node.id }}" {{ attributes }}>
+  <div class="installation-content row">
+    {{ title_prefix }}
+    {% if not page %}
+      <h2{{ title_attributes }}>{{ label }}</h3>
+    {% endif %}
+    {{ title_suffix }}
+    <div class="columns medium-8 large-9">
+    {{content.field_artiste}}
+    {{content.field_image}}
+    {{content.body}}
+    </div>
+    {# We hide the comments and links now so that we can render them later. #}
+    <div class="columns medium-4 large-3">
+      {{ content|without('body', 'comment', 'links', 'field_tags', 'field_image', 'field_artist', 'field_artiste', 'field_acces_pmr') }}
+      {% if node.field_acces_pmr.0.value %}
+        <img class="picto-pmr" src="{{ base_path }}/themes/custom/visit/images/logo_pmr.png" alt="{{ "accessible PMR"|t }}" />
+      {% endif %}
+    </div>
+  </div>
+</article>
+{% if page %}
+<script>
+  fbq('track', 'ViewContent', { 
+  content_name: '{{ node.title.0.value }}',
+  content_category: '{{ node.type.0.target_id }}'
+  });
+</script>
+{% endif %}
